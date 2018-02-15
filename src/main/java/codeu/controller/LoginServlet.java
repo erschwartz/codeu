@@ -79,7 +79,7 @@ public class LoginServlet extends HttpServlet {
 
     // TODO: Replace with real password
     if (!userStore.isUserRegistered(username)) {
-      User user = new User(UUID.randomUUID(), username, "password" Instant.now());
+      User user = new User(UUID.randomUUID(), username, "password", Instant.now());
       userStore.addUser(user);
     }
 
